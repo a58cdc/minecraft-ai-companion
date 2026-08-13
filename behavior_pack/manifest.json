@@ -1,1 +1,32 @@
-
+{
+  "format_version": 2,
+  "header": {
+    "name": "AI Companion",
+    "description": "iPhoneのマイクラ(統合版)に寄り添うAI相棒。PC上のBedrock Dedicated ServerでGemini APIと連携します。",
+    "uuid": "6a3f2b10-2b3a-4b7a-9d1b-1a2b3c4d5e6f",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "7b4f3c21-3c4b-4c8b-8e2c-2b3c4d5e6f70",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.10.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    }
+  ],
+  "metadata": {
+    "authors": ["you"]
+  }
+}
