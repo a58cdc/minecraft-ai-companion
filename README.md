@@ -1,13 +1,13 @@
 # AI Companion for Minecraft Bedrock（相棒AI「ナビ」）
 
-iPhoneでプレイする統合版マインクラフトに寄り添う、体を持たないAI相棒を作るアドオンです。
+マインクラフト統合版（iOS / Android / PC等）に寄り添う、体を持たないAI相棒を作るアドオンです。
 PC上で動く **Bedrock Dedicated Server (BDS)** の中で直接 Gemini API を呼び出す構成なので、
 別途Node.jsサーバーなどを用意する必要はありません。BDS自体が「専用サーバー」の役割を果たします。
 
 ## 全体構成
 
 ```
-[iPhone] --Bedrock接続(LAN/フレンド)--> [PC: Bedrock Dedicated Server]
+[スマホなど] --Bedrock接続(LAN/フレンド)--> [PC: Bedrock Dedicated Server]
                                               └─ behavior_pack (Script API)
                                                    ├─ チャット監視 ("見て" "ダイヤある？" など)
                                                    ├─ 視線レイキャスト / 周辺ブロックスキャン
@@ -60,8 +60,8 @@ Minecraft公式サイトからBDS（Windows/Linux版）をPCにダウンロー�
 3. `GEMINI_MODEL` は https://ai.google.dev/gemini-api/docs/models で現在使えるモデル名を確認して設定する
    （モデル名は更新されやすいため、うまく動かない場合はまずここを疑ってください）
 
-### 5. iPhoneから接続する
-BDSを起動したら、iPhoneのマインクラフトから「サーバーを追加」でPCのローカルIP（例: `192.168.x.x`）と
+### 5. スマホから接続する
+BDSを起動したら、スマホのマインクラフトから「サーバーを追加」でPCのローカルIP（例: `192.168.x.x`）と
 ポート（既定19132）を指定して接続します。同じWi-Fi内であればこれで繋がります。
 
 ### 6. 遊んでみる
